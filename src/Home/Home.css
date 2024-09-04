@@ -1,0 +1,38 @@
+.home-container {
+    padding: 20px;
+  }
+  
+  .movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .movie-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    width: calc(33.333% - 40px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-card h3 {
+    margin-top: 0;
+  }
+  
+  .movie-card p {
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .movie-card {
+      width: calc(50% - 40px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movie-card {
+      width: 100%;
+    }
+  }
+  
